@@ -1,0 +1,88 @@
+{
+    "geode": "6.0.0-alpha.1",
+    "gd": {
+        "win": "2.2091"
+    },
+    "version": "v1.4.0",
+    "id": "lewis.fpsvisuals",
+    "name": "Sunshine Menu",
+    "developer": "Lewis",
+    "description": "Sunshine Menu adds editable speed controls, BPM beat toggling, and named practice bot files.",
+    "settings": {
+        "toggle-menu": {
+            "name": "Toggle Mod Menu",
+            "description": "Open or close the in-game menu.",
+            "type": "keybind",
+            "default": "Tab",
+            "category": "gameplay"
+        },
+        "noclip": {
+            "name": "Noclip",
+            "description": "Prevent player deaths during gameplay.",
+            "type": "bool",
+            "default": false
+        },
+        "speed-hack": {
+            "name": "Speed Hack",
+            "description": "Apply the custom speed multiplier during gameplay.",
+            "type": "bool",
+            "default": false
+        },
+        "custom-speed": {
+            "name": "Custom Speed",
+            "description": "Gameplay speed multiplier, from 0.1x to 5x.",
+            "type": "float",
+            "default": 2.0,
+            "min": 0.1,
+            "max": 5.0
+        },
+        "music-sync": {
+            "name": "BPM Beat Sync",
+            "description": "Toggle between normal and custom speed on alternating BPM beats.",
+            "type": "bool",
+            "default": false
+        },
+        "song-bpm": {
+            "name": "Song BPM",
+            "description": "Tempo used for beat toggling. This is BPM timing, not audio analysis.",
+            "type": "float",
+            "default": 120.0,
+            "min": 40.0,
+            "max": 240.0
+        },
+        "fps-cap": {
+            "name": "FPS Cap",
+            "description": "Frame cap selected in the in-game menu. Set to 0 for the game default.",
+            "type": "int",
+            "default": 0,
+            "min": 0,
+            "max": 360
+        },
+        "show-fps": {
+            "name": "Show FPS",
+            "description": "Display the frame rate during gameplay.",
+            "type": "bool",
+            "default": true
+        },
+        "show-frame-time": {
+            "name": "Show Frame Time",
+            "description": "Display frame time in milliseconds.",
+            "type": "bool",
+            "default": false
+        },
+        "text-color": {
+            "name": "Text Color",
+            "description": "Choose the overlay text color.",
+            "type": "color",
+            "default": "#FFFFFF"
+        },
+        "position": {
+            "name": "Position",
+            "description": "0: top right, 1: top left, 2: bottom left, 3: bottom right.",
+            "type": "int",
+            "default": 0,
+            "min": 0,
+            "max": 3
+        }
+    }
+}
